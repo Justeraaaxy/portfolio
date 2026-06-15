@@ -8,11 +8,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Animated Greeting Overlay -->
+    <div class="greeting-overlay">
+        <div class="greeting-container">
+            <div class="greeting-text">
+                <span class="greeting-word">Hello</span>
+                <span class="greeting-word">Hola</span>
+                <span class="greeting-word">Halo</span>
+                <span class="greeting-word">👋</span>
+            </div>
+            <p class="greeting-subtitle">Welcome to my portfolio</p>
+            <button class="greeting-skip">Skip</button>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-wrapper">
-                <div class="logo">MKN</div>
+                <div class="logo">
+                    <span class="logo-icon">💻</span>
+                    <span>MKN</span>
+                </div>
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
@@ -32,14 +49,58 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="stars"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Muhammad Kevin Nurmediana</h1>
+                <h1 class="hero-title">
+                    <span class="char">M</span>
+                    <span class="char">u</span>
+                    <span class="char">h</span>
+                    <span class="char">a</span>
+                    <span class="char">m</span>
+                    <span class="char">m</span>
+                    <span class="char">a</span>
+                    <span class="char">d</span>
+                    <span class="char"> </span>
+                    <span class="char">K</span>
+                    <span class="char">e</span>
+                    <span class="char">v</span>
+                    <span class="char">i</span>
+                    <span class="char">n</span>
+                    <span class="space"></span>
+                    <span class="char">N</span>
+                    <span class="char">u</span>
+                    <span class="char">r</span>
+                    <span class="char">m</span>
+                    <span class="char">e</span>
+                    <span class="char">d</span>
+                    <span class="char">i</span>
+                    <span class="char">a</span>
+                    <span class="char">n</span>
+                    <span class="char">a</span>
+                </h1>
                 <p class="hero-subtitle">Frontend & Web Developer | Remote Specialist</p>
                 <p class="hero-description">Self-taught web developer with 3+ years of hands-on experience building responsive web applications and RESTful APIs. Passionate about clean code, fast delivery, and remote-first collaboration.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-comment-dots"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-decoration">
+                <div class="floating-card">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="floating-card" style="--delay: 0.5s">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="floating-card" style="--delay: 1s">
+                    <i class="fas fa-palette"></i>
                 </div>
             </div>
         </div>
@@ -51,22 +112,26 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a self-taught web developer based in Bandung, Indonesia, specializing in building modern, responsive web applications. With over 3 years of hands-on experience, I've developed a strong passion for clean code, fast delivery, and remote-first collaboration.</p>
-                    <p>My journey in web development started with a curiosity about how websites work. Through continuous learning and practical projects, I've mastered frontend technologies like React.js, HTML5, CSS3, and JavaScript, as well as backend technologies including Node.js, Express, and various databases.</p>
-                    <p>I'm particularly interested in creating exceptional user experiences and optimizing application performance. When I'm not coding, I enjoy exploring new technologies and contributing to the developer community.</p>
+                    <p class="about-paragraph">I'm a self-taught web developer based in Bandung, Indonesia, specializing in building modern, responsive web applications. With over 3 years of hands-on experience, I've developed a strong passion for clean code, fast delivery, and remote-first collaboration.</p>
+                    <p class="about-paragraph">My journey in web development started with a curiosity about how websites work. Through continuous learning and practical projects, I've mastered frontend technologies like React.js, HTML5, CSS3, and JavaScript, as well as backend technologies including Node.js, Express, and various databases.</p>
+                    <p class="about-paragraph">I'm particularly interested in creating exceptional user experiences and optimizing application performance. When I'm not coding, I enjoy exploring new technologies and contributing to the developer community.</p>
                 </div>
                 <div class="about-stats">
-                    <div class="stat">
-                        <h3>3+</h3>
-                        <p>Years Experience</p>
+                    <div class="stat-box">
+                        <div class="stat-number">3+</div>
+                        <p class="stat-label">Years Experience</p>
                     </div>
-                    <div class="stat">
-                        <h3>10+</h3>
-                        <p>Projects Completed</p>
+                    <div class="stat-box">
+                        <div class="stat-number">10+</div>
+                        <p class="stat-label">Projects Completed</p>
                     </div>
-                    <div class="stat">
-                        <h3>2</h3>
-                        <p>Languages</p>
+                    <div class="stat-box">
+                        <div class="stat-number">2</div>
+                        <p class="stat-label">Languages</p>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">100%</div>
+                        <p class="stat-label">Dedication</p>
                     </div>
                 </div>
             </div>
@@ -79,8 +144,11 @@
             <h2 class="section-title">Work Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">Jan 2023 – Present</div>
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
                     <div class="timeline-content">
+                        <div class="timeline-date">Jan 2023 – Present</div>
                         <h3>Frontend Developer</h3>
                         <p class="job-company">Self-Employed Freelance (Remote)</p>
                         <ul class="job-description">
@@ -93,8 +161,11 @@
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-date">Jan 2023 – Present</div>
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
                     <div class="timeline-content">
+                        <div class="timeline-date">Jan 2023 – Present</div>
                         <h3>Freelance Web Developer</h3>
                         <p class="job-company">Self-Employed (Remote)</p>
                         <ul class="job-description">
@@ -107,8 +178,11 @@
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-date">Jun 2023 – Dec 2023</div>
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
                     <div class="timeline-content">
+                        <div class="timeline-date">Jun 2023 – Dec 2023</div>
                         <h3>Backend Developer</h3>
                         <p class="job-company">PT. Saka Digital Nusantara (Remote, Contract)</p>
                         <ul class="job-description">
@@ -129,50 +203,77 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-header">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
                         <h3>Toko Online UMKM</h3>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MySQL</span>
+                        <p class="project-description">E-commerce platform with cart, payment gateway & admin dashboard for managing inventory and orders.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
                         </div>
-                    </div>
-                    <p class="project-description">E-commerce platform with cart, payment gateway & admin dashboard for managing inventory and orders.</p>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
                         <h3>Task Manager App</h3>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Tailwind</span>
+                        <p class="project-description">Remote team productivity tool with real-time updates, task assignment, and progress tracking features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Tailwind</span>
                         </div>
-                    </div>
-                    <p class="project-description">Remote team productivity tool with real-time updates, task assignment, and progress tracking features.</p>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>Portfolio Generator</h3>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-file-alt"></i>
                         </div>
                     </div>
-                    <p class="project-description">Auto-generates portfolio websites from JSON configuration files. Customizable templates and instant deployment.</p>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    <div class="project-content">
+                        <h3>Portfolio Generator</h3>
+                        <p class="project-description">Auto-generates portfolio websites from JSON configuration files. Customizable templates and instant deployment.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -185,43 +286,141 @@
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <ul class="skill-list">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React.js</li>
-                        <li>Tailwind CSS</li>
-                    </ul>
+                    <div class="skill-header">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Tailwind CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3>Backend</h3>
-                    <ul class="skill-list">
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>Python</li>
-                        <li>REST API</li>
-                        <li>API Design</li>
-                    </ul>
+                    <div class="skill-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Express</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 83%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>REST API</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3>Database</h3>
-                    <ul class="skill-list">
-                        <li>MySQL</li>
-                        <li>PostgreSQL</li>
-                        <li>MongoDB</li>
-                        <li>Firebase</li>
-                    </ul>
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Firebase</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <ul class="skill-list">
-                        <li>Git & GitHub</li>
-                        <li>Docker</li>
-                        <li>Postman</li>
-                        <li>Figma</li>
-                        <li>VS Code</li>
-                    </ul>
+                    <div class="skill-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Postman</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -234,30 +433,38 @@
             <div class="contact-content">
                 <p class="contact-intro">I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
                 <div class="contact-methods">
-                    <a href="mailto:muhammaadkevinurmediana@gmail.com" class="contact-method">
-                        <i class="fas fa-envelope"></i>
-                        <div>
+                    <a href="mailto:muhammaadkevinurmediana@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
                             <h3>Email</h3>
                             <p>muhammaadkevinurmediana@gmail.com</p>
                         </div>
                     </a>
-                    <a href="tel:+6285860631315" class="contact-method">
-                        <i class="fas fa-phone"></i>
-                        <div>
+                    <a href="tel:+6285860631315" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info">
                             <h3>Phone</h3>
                             <p>+62 858-6063-1315</p>
                         </div>
                     </a>
-                    <a href="https://github.com/Justeraaaxy" class="contact-method">
-                        <i class="fab fa-github"></i>
-                        <div>
+                    <a href="https://github.com/Justeraaaxy" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-info">
                             <h3>GitHub</h3>
                             <p>github.com/Justeraaaxy</p>
                         </div>
                     </a>
-                    <a href="https://linkedin.com/in/muhammadkevinurmediana" class="contact-method">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
+                    <a href="https://linkedin.com/in/muhammadkevinurmediana" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-info">
                             <h3>LinkedIn</h3>
                             <p>linkedin.com/in/muhammadkevinurmediana</p>
                         </div>
@@ -270,11 +477,19 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Muhammad Kevin Nurmediana. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://github.com/Justeraaaxy"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/muhammadkevinurmediana"><i class="fab fa-linkedin"></i></a>
-                <a href="https://instagram.com/muhammaadkevinurmediana" target="_blank"><i class="fab fa-instagram"></i></a>
+            <div class="footer-content">
+                <p>&copy; 2024 Muhammad Kevin Nurmediana. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Justeraaaxy" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/muhammadkevinurmediana" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com/muhammaadkevinurmediana" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
